@@ -27,6 +27,15 @@ function updateScore(player, opponent) {
             opponent.scoreOutput.classList.add('loser');
             player.button.disabled = true;
             opponent.button.disabled = true;
+        } else if (player.score === opponent.score && player.score === targetScore - 1) {
+            targetScore += 1;
+            // adding new option for play to
+            newOption = document.createElement('option');
+            newOption.textContent = targetScore;
+            newOption.value = targetScore;
+            targetScoreSelect.append(newOption);
+            targetScoreSelect.value = targetScore;
+            targetScoreSelect.classList.add("newTarget", "bold");
         }
         player.scoreOutput.innerText = player.score;
     }
@@ -49,6 +58,11 @@ resetBtn.addEventListener('click', reset)
 
 function reset() {
     gameOver = false;
+    targetScoreSelect.classList.remove("newTarget", "bold");
+    for (let i = 2; i < targetScoreSelect.length; i = 2) {
+        targetScoreSelect[i].remove();
+
+    }
     for (let player of [player1, player2]) {
         player.score = 0;
         player.scoreOutput.innerText = 0;

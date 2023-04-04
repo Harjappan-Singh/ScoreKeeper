@@ -53,6 +53,16 @@ label {
     font-size: 2px;
 }
 
+.newTarget {
+    font-weight: 900;
+    background-color: hsl(348, 100%, 61%) !important;
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 /* addtional features: adding tie breaker ( winner should win by atleast 2 ponts of difference)
  a slight animation of who wins
  making the score of person leading bigger then other */
