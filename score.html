@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="score.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="card" style="width: 30rem;">
+            <img src="data:image/jpeg;base64,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"
+                class="card-img-top" alt="ping pong image">
+            <div class="card-body">
+                <h2>Ping Pong ScoreKeeper</h2>
+                <div id="displayScore">
+                    <span id="player1Score">0</span> to
+                    <span id="player2Score">0</span>
+                </div>
+
+                <p>Use the buttons below to keep track of score</p>
+                <div>
+                    <label for="gameOf">Playing To </label>
+                    <select name="" id="gameOf">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" id="player1Btn">+1 Player one</button>
+                <button type="button" class="btn btn-success" id="player2Btn">+1 Player two</button>
+                <button type="button" class="btn btn-warning" id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="playerName">
+        <div class="inputs">
+            <input type="text" placeholder="player 1 name" id="player1Name">
+            <input type="text" placeholder="player 2 name" id="player2Name">
+            <button class="btn btn-info" id="playGame">Play </button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="score.js"></script>
+</body>
+
+</html>

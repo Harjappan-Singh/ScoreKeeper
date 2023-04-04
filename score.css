@@ -1,0 +1,50 @@
+.card {
+    margin: 7em auto;
+}
+
+.card h2 {
+    border-bottom: grey 1px solid;
+    padding-bottom: 1em;
+}
+
+#displayScore {
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+label {
+    font-weight: 800;
+    padding-bottom: 2em;
+}
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}
+
+.game {
+    display: none;
+}
+
+.inputs {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.playerName {
+    padding: 10em;
+    margin: 2em;
+    background-color: rgb(210, 200, 200);
+    border: black solid 1px;
+    max-width: 800px;
+}
+
+#playGame,
+.playerName input {
+    margin-top: 1em;
+}
