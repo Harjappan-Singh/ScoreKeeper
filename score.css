@@ -52,3 +52,7 @@ label {
 #addito {
     font-size: 2px;
 }
+
+/* addtional features: adding tie breaker ( winner should win by atleast 2 ponts of difference)
+ a slight animation of who wins
+ making the score of person leading bigger then other */
